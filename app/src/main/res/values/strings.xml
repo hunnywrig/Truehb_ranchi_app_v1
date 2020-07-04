@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Truehb_ranchi_app_v1</string>
+    <array name="user_type">
+        <item>Select User Type</item>
+        <item>Admin</item>
+        <item>User</item>
+    </array>
+</resources>
