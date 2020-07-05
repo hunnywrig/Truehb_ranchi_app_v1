@@ -8,6 +8,8 @@ import android.net.NetworkInfo;
 
 import androidx.appcompat.app.AlertDialog;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 public class InternetConnection {
 
     /**
@@ -36,7 +38,7 @@ public class InternetConnection {
             public void run() {
                 context.runOnUiThread(new Runnable() {
                     public void run() {
-                        new AlertDialog.Builder(context)
+                        new MaterialAlertDialogBuilder(context)
                                 .setTitle("No Internet Connection !")
                                 .setMessage("Please check internet connection and try again. Thank you.")
 

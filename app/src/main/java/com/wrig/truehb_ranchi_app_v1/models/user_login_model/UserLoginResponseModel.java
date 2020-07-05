@@ -13,7 +13,7 @@ public class UserLoginResponseModel implements Serializable {
     private String message;
 
     @SerializedName("userData")
-   private UserLoginModel userLoginModel;
+    private UserLoginModel userLoginModel;
 
     public UserLoginResponseModel() {
     }

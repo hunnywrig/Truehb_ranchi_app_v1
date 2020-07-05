@@ -5,4 +5,26 @@
         <item>Admin</item>
         <item>User</item>
     </array>
+    <array name="user_gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+    </array>
+    <array name="test_district">
+        <item>Select District</item>
+        <item>Ranchi</item>
+    </array>
+    <array name="test_block">
+        <item>Select Block</item>
+        <item>Block 1</item>
+        <item>Block 2</item>
+        <item>Block 3</item>
+    </array>
+    <array name="test_center">
+        <item>Select Center</item>
+        <item>Center 1</item>
+        <item>Center 2</item>
+        <item>Center 3</item>
+    </array>
 </resources>

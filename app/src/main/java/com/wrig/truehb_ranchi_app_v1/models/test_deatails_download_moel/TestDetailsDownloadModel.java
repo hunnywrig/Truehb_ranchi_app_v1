@@ -1,16 +1,10 @@
-package com.wrig.truehb_ranchi_app_v1.models;
-
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
+package com.wrig.truehb_ranchi_app_v1.models.test_deatails_download_moel;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-@Entity(tableName = "TestDetailsTable")
-public class TestDetailsModels implements Serializable {
-    @PrimaryKey(autoGenerate = true)
-    private int id;
+public class TestDetailsDownloadModel implements Serializable {
 
     @SerializedName("test_id")
     private String test_id;
@@ -37,11 +31,10 @@ public class TestDetailsModels implements Serializable {
     @SerializedName("server_status")
     private int server_status;
 
-    public TestDetailsModels() {
+    public TestDetailsDownloadModel() {
     }
 
-    public TestDetailsModels(int id, String test_id, int u_id, String client_name, int client_age, int client_gender, int client_pregnant_status, String client_hb_value, String district, String block, String phc_uhc_sc, String test_time_stamp, int server_status) {
-        this.id = id;
+    public TestDetailsDownloadModel(String test_id, int u_id, String client_name, int client_age, int client_gender, int client_pregnant_status, String client_hb_value, String district, String block, String phc_uhc_sc, String test_time_stamp, int server_status) {
         this.test_id = test_id;
         this.u_id = u_id;
         this.client_name = client_name;
@@ -54,14 +47,6 @@ public class TestDetailsModels implements Serializable {
         this.phc_uhc_sc = phc_uhc_sc;
         this.test_time_stamp = test_time_stamp;
         this.server_status = server_status;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getTest_id() {
@@ -163,8 +148,7 @@ public class TestDetailsModels implements Serializable {
     @Override
     public String toString() {
         return "TestDetailsModels{" +
-                "id=" + id +
-                ", test_id='" + test_id + '\'' +
+                "test_id='" + test_id + '\'' +
                 ", u_id=" + u_id +
                 ", client_name='" + client_name + '\'' +
                 ", client_age=" + client_age +

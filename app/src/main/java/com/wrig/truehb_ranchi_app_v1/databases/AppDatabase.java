@@ -7,9 +7,9 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.wrig.truehb_ranchi_app_v1.interfaces.TestDetailsDao;
-import com.wrig.truehb_ranchi_app_v1.models.TestDetailsModels;
+import com.wrig.truehb_ranchi_app_v1.models.test_details_database_model.TestDetailsDatabaseModel;
 
-@Database(entities = {TestDetailsModels.class}, version = 1)
+@Database(entities = {TestDetailsDatabaseModel.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
     public static final String DATABASE_NAME = "Truehb_ranchi.db";
 
@@ -26,6 +26,7 @@ public abstract class AppDatabase extends RoomDatabase {
                 if (instance == null) {
 
                     instance = Room.databaseBuilder(context.getApplicationContext(), AppDatabase.class, DATABASE_NAME)
+                            .allowMainThreadQueries()
                             .build();
 
                 }

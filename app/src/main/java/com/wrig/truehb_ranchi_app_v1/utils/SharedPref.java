@@ -22,6 +22,13 @@ public class SharedPref {
         sharedPreferences = context.getSharedPreferences(Constants.SHARED_PREF_FILE_NAME, Context.MODE_PRIVATE);
     }
 
+    public  void clearPrefence()
+    {
+        SharedPreferences.Editor prefsEditor = sharedPreferences.edit();
+        prefsEditor.clear().commit();
+
+    }
+
 
     public void setStringData(String key, String value) {
         SharedPreferences.Editor prefsEditor = sharedPreferences.edit();
@@ -35,18 +42,25 @@ public class SharedPref {
 
     }
 
-    public void setbooleanData(String key, boolean value) {
+    public void setBooleanData(String key, boolean value) {
         SharedPreferences.Editor prefsEditor = sharedPreferences.edit();
         prefsEditor.putBoolean(key, value);
         prefsEditor.commit();
     }
 
-    public boolean getbooleanData(String key, boolean defValue) {
-
+    public boolean getBooleanData(String key, boolean defValue) {
         return sharedPreferences.getBoolean(key, defValue);
-
     }
 
+    public void setIntegerData(String key, int value) {
+        SharedPreferences.Editor prefsEditor = sharedPreferences.edit();
+        prefsEditor.putInt(key, value);
+        prefsEditor.commit();
+    }
+
+    public int getIntegerData(String key, int defValue) {
+        return sharedPreferences.getInt(key, defValue);
+    }
 
 
 }
