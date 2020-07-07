@@ -11,6 +11,12 @@
         <item>Female</item>
         <item>Transgender</item>
     </array>
+
+    <array name="test_anemic">
+        <item>Select Anemic</item>
+        <item>Anemic</item>
+        <item>Not Anemic</item>
+    </array>
     <array name="test_district">
         <item>Select District</item>
         <item>Ranchi</item>

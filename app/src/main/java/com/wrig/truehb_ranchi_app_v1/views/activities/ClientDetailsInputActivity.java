@@ -3,6 +3,7 @@ package com.wrig.truehb_ranchi_app_v1.views.activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatSpinner;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.AdapterView;
 import com.google.android.material.checkbox.MaterialCheckBox;
 import com.google.android.material.textfield.TextInputEditText;
 import com.wrig.truehb_ranchi_app_v1.R;
+import com.wrig.truehb_ranchi_app_v1.models.ClientDetailsModel;
 import com.wrig.truehb_ranchi_app_v1.utils.SharedPref;
 import com.wrig.truehb_ranchi_app_v1.utils.ShowToastUtils;
 
@@ -73,6 +75,7 @@ public class ClientDetailsInputActivity extends AppCompatActivity {
         String district = spinner_district.getSelectedItem().toString().trim();
         String block = spinner_block.getSelectedItem().toString().trim();
         String center = spinner_center.getSelectedItem().toString().trim();
+        int gender = 0;
 
         if (TextUtils.isEmpty(client_name) || client_name.length() < 3) {
             textinputedittext_clinet_name.setError("Please enter the name");
@@ -90,6 +93,18 @@ public class ClientDetailsInputActivity extends AppCompatActivity {
             ShowToastUtils.showUiSnackBar(ClientDetailsInputActivity.this, view, "Please select the center");
         } else {
 
+            if (client_gender.equals("Male")) {
+                gender = 1;
+            } else if (client_gender.equals("Female")) {
+                gender = 2;
+            } else {
+                gender = 3;
+            }
+
+            ClientDetailsModel clientDetailsModel = new ClientDetailsModel(client_name, client_age, gender, client_pregnant, district, block, center);
+            Intent i = new Intent(ClientDetailsInputActivity.this, DeviceCheckActivity.class);
+            i.putExtra("clientDetails", clientDetailsModel);
+            startActivity(i);
         }
 
     }

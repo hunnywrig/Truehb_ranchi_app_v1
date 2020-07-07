@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/card_bg"
+        android:paddingBottom="16dp">
+
+
+        <TextView
+
+            android:id="@+id/tv_AppInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Test Result"
+            android:textColor="@color/content_text_black_color"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_AppInfo"
+            android:layout_alignStart="@+id/tv_AppInfo">
+
+            <RelativeLayout
+                android:id="@+id/rl_HBReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_appVersionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:lineSpacingExtra="8dp"
+                    android:text="Hb Value :"
+                    android:textColor="@color/content_text_black_color" />
+
+                <TextView
+                    android:id="@+id/tv_hbValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toEndOf="@+id/tv_appVersionLabel"
+                    android:lineSpacingExtra="8dp"
+                    android:text="0.0"
+                    android:textColor="@color/content_text_gray_color" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnSaveTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_below="@+id/rl_HBReport"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:text="Save Test"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRepeatTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_below="@+id/btnSaveTest"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:text="Repeat Test"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnBackToHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_below="@+id/btnRepeatTest"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:text="Back To Home"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:contentDescription="todo"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+
+</RelativeLayout>

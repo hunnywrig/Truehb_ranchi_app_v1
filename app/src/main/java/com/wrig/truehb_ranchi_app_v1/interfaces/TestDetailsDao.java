@@ -26,4 +26,7 @@ public interface TestDetailsDao {
 
     @Query("UPDATE TestDetailsTable SET server_status =:server_status WHERE test_id = :test_id")
     int updateTestDataServerStatusByTestId(String test_id, int server_status);
+
+    @Query("SELECT * FROM TestDetailsTable WHERE u_id = :user_id")
+    List<TestDetailsDatabaseModel> getAllTestDataByUserId(int user_id);
 }

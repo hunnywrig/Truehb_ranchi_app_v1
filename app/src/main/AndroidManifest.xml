@@ -17,7 +17,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".views.activities.ClientDetailsInputActivity"></activity>
+        <activity android:name=".views.activities.FinalTestActivity"></activity>
+        <activity android:name=".views.activities.DeviceCheckActivity" />
+        <activity android:name=".views.activities.TestResportActivity" />
+        <activity android:name=".views.activities.ClientDetailsInputActivity" />
         <activity android:name=".views.activities.SuperAdminDashBaordActivity" />
         <activity android:name=".views.activities.UserDashBoardActivity" />
         <activity android:name=".views.activities.LoginActivity">
@@ -28,6 +31,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".views.activities.MainActivity" />
+
+        <service
+            android:name=".services.UsbService"
+            android:enabled="true" />
     </application>
 
 </manifest>

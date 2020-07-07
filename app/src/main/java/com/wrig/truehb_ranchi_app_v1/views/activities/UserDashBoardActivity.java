@@ -1,7 +1,6 @@
 package com.wrig.truehb_ranchi_app_v1.views.activities;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -182,6 +181,11 @@ public class UserDashBoardActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.d(TAG, "Exception___" + e);
                 }
+                break;
+            }
+            case R.id.test_report:
+            {
+                startActivity(new Intent(UserDashBoardActivity.this, TestResportActivity.class));
                 break;
             }
         }

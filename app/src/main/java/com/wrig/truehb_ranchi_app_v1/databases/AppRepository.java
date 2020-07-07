@@ -62,4 +62,8 @@ public class AppRepository {
             }
         });
     }
+
+    public List<TestDetailsDatabaseModel> getAllTestDataByUserId(int user_id) {
+        return mAppDatabase.TestDetailsDao().getAllTestDataByUserId(user_id);
+    }
 }
