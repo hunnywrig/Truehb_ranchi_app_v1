@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -14,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.wrig.truehb_ranchi_app_v1.R;
 import com.wrig.truehb_ranchi_app_v1.models.test_details_database_model.TestDetailsDatabaseModel;
+import com.wrig.truehb_ranchi_app_v1.models.test_dispaly_model.TestDetailsDisplayModel;
 import com.wrig.truehb_ranchi_app_v1.utils.DisplayDateUtils;
 
 import java.text.SimpleDateFormat;
@@ -24,30 +24,29 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.MyViewHolder> {
+public class DisplayReportAdapter extends RecyclerView.Adapter<DisplayReportAdapter.MyViewHolder> {
 
     private Context mContext;
-    private List<TestDetailsDatabaseModel> mDataList;
+    private List<TestDetailsDisplayModel> mDataList;
 
-    public ReportAdapter(Context mContext, List<TestDetailsDatabaseModel> mDataList) {
+    public DisplayReportAdapter(Context mContext, List<TestDetailsDisplayModel> mDataList) {
         this.mContext = mContext;
         this.mDataList = mDataList;
     }
 
-
     @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public DisplayReportAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(mContext).inflate(R.layout.custom_report_view, parent, false);
 
-        return new MyViewHolder(view);
+        return new DisplayReportAdapter.MyViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull DisplayReportAdapter.MyViewHolder holder, int position) {
 
-        final TestDetailsDatabaseModel model = mDataList.get(position);
+        final TestDetailsDisplayModel model = mDataList.get(position);
 
 
         // holder.img_user.setAnimation(AnimationUtils.loadAnimation(mContext, R.anim.fade_transition_animation));
@@ -85,7 +84,6 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.MyViewHold
         } else {
             holder.tv_pregnantValue.setText("No");
         }
-
         holder.tv_ageValue.setText("" + model.getClient_age());
         holder.tv_districtValue.setText(model.getDistrict());
 
@@ -163,4 +161,3 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.MyViewHold
 
     }
 }
-

@@ -1,4 +1,4 @@
-package com.wrig.truehb_ranchi_app_v1.models;
+package com.wrig.truehb_ranchi_app_v1.models.client_details_model;
 
 import java.io.Serializable;
 

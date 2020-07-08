@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 import com.wrig.truehb_ranchi_app_v1.R;
 import com.wrig.truehb_ranchi_app_v1.interfaces.MyUsbBroadcastListener;
-import com.wrig.truehb_ranchi_app_v1.models.ClientDetailsModel;
+import com.wrig.truehb_ranchi_app_v1.models.client_details_model.ClientDetailsModel;
 import com.wrig.truehb_ranchi_app_v1.services.MyUsbReceiver;
 import com.wrig.truehb_ranchi_app_v1.services.UsbService;
 import com.wrig.truehb_ranchi_app_v1.utils.SharedPref;

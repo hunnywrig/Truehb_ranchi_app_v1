@@ -1,24 +1,33 @@
-package com.wrig.truehb_ranchi_app_v1.views.activities;
+package com.wrig.truehb_ranchi_app_v1.views.activities.admin;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.wrig.truehb_ranchi_app_v1.R;
 import com.wrig.truehb_ranchi_app_v1.utils.SharedPref;
+import com.wrig.truehb_ranchi_app_v1.views.activities.LoginActivity;
 
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class SuperAdminDashBaordActivity extends AppCompatActivity {
     SharedPref sharedPref;
-
+    private static final int REQUEST_STORAGE = 2;
+private String TAG =SuperAdminDashBaordActivity.class.getSimpleName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +36,19 @@ public class SuperAdminDashBaordActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Admin Dashboard");
         ButterKnife.bind(this);
         sharedPref = SharedPref.getInstance(SuperAdminDashBaordActivity.this);
+        requestLocationPermission();
     }
+    @OnClick(R.id.button_test_details)
+    void fetchTestDetials(View view)
+    {
+        startActivity(new Intent(this,DataFilterActivity.class));
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    void requestLocationPermission() {
+        requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_STORAGE);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -62,6 +83,7 @@ public class SuperAdminDashBaordActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 
     @Override
     public boolean onSupportNavigateUp() {

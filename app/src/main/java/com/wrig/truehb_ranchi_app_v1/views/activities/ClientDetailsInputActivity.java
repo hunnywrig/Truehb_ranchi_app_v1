@@ -12,7 +12,7 @@ import android.widget.AdapterView;
 import com.google.android.material.checkbox.MaterialCheckBox;
 import com.google.android.material.textfield.TextInputEditText;
 import com.wrig.truehb_ranchi_app_v1.R;
-import com.wrig.truehb_ranchi_app_v1.models.ClientDetailsModel;
+import com.wrig.truehb_ranchi_app_v1.models.client_details_model.ClientDetailsModel;
 import com.wrig.truehb_ranchi_app_v1.utils.SharedPref;
 import com.wrig.truehb_ranchi_app_v1.utils.ShowToastUtils;
 

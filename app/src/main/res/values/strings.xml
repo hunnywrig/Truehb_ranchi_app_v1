@@ -12,11 +12,7 @@
         <item>Transgender</item>
     </array>
 
-    <array name="test_anemic">
-        <item>Select Anemic</item>
-        <item>Anemic</item>
-        <item>Not Anemic</item>
-    </array>
+
     <array name="test_district">
         <item>Select District</item>
         <item>Ranchi</item>
@@ -32,5 +28,15 @@
         <item>Center 1</item>
         <item>Center 2</item>
         <item>Center 3</item>
+    </array>
+
+    <array name="test_anemic">
+        <item>Select Anemic</item>
+        <item>Anemic</item>
+        <item>Not Anemic</item>
+    </array>
+    <array name="initial_age_slider_values">
+        <item>10</item>
+        <item>70</item>
     </array>
 </resources>

@@ -8,6 +8,8 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -16,12 +18,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
-        <activity android:name=".views.activities.FinalTestActivity"></activity>
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true">
+
+
+        <activity android:name=".views.activities.admin.DataDisplayActivity"></activity>
+        <activity android:name=".views.activities.admin.DataFilterActivity" />
+        <activity android:name=".views.activities.FinalTestActivity" />
         <activity android:name=".views.activities.DeviceCheckActivity" />
         <activity android:name=".views.activities.TestResportActivity" />
         <activity android:name=".views.activities.ClientDetailsInputActivity" />
-        <activity android:name=".views.activities.SuperAdminDashBaordActivity" />
+        <activity android:name=".views.activities.admin.SuperAdminDashBaordActivity" />
         <activity android:name=".views.activities.UserDashBoardActivity" />
         <activity android:name=".views.activities.LoginActivity">
             <intent-filter>

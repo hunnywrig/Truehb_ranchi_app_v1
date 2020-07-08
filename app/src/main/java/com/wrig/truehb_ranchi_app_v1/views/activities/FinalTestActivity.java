@@ -32,7 +32,7 @@ import com.wrig.truehb_ranchi_app_v1.R;
 import com.wrig.truehb_ranchi_app_v1.databases.AppRepository;
 import com.wrig.truehb_ranchi_app_v1.interfaces.BottomSheetFragmentButtonClickListener;
 import com.wrig.truehb_ranchi_app_v1.interfaces.MyUsbBroadcastListener;
-import com.wrig.truehb_ranchi_app_v1.models.ClientDetailsModel;
+import com.wrig.truehb_ranchi_app_v1.models.client_details_model.ClientDetailsModel;
 import com.wrig.truehb_ranchi_app_v1.models.test_details_database_model.TestDetailsDatabaseModel;
 import com.wrig.truehb_ranchi_app_v1.services.MyUsbReceiver;
 import com.wrig.truehb_ranchi_app_v1.services.UsbService;

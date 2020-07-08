@@ -41,4 +41,11 @@ public class DisplayDateUtils {
         return  simpleDateFormat.format(timestamp);
     }
 
+    public static String getCurrentDateAndTimeFileName()
+    {
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
+        return  simpleDateFormat.format(timestamp);
+    }
+
 }

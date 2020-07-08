@@ -75,12 +75,33 @@
                 android:layout_toEndOf="@+id/tv_genderLabel"
                 android:lineSpacingExtra="8dp"
                 android:textColor="@color/content_text_gray_color" />
+            <TextView
+                android:id="@+id/tv_pregnantLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_genderLabel"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:lineSpacingExtra="8dp"
+                android:text="Pregnant :"
+                android:textColor="@color/content_text_black_color" />
+
+            <TextView
+                android:id="@+id/tv_pregnantValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_genderValue"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@+id/tv_pregnantLabel"
+                android:lineSpacingExtra="8dp"
+                android:textColor="@color/content_text_gray_color" />
 
             <TextView
                 android:id="@+id/tv_ageLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_genderLabel"
+                android:layout_below="@+id/tv_pregnantLabel"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:lineSpacingExtra="8dp"
@@ -91,7 +112,7 @@
                 android:id="@+id/tv_ageValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_genderValue"
+                android:layout_below="@+id/tv_pregnantValue"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:layout_toEndOf="@+id/tv_genderLabel"

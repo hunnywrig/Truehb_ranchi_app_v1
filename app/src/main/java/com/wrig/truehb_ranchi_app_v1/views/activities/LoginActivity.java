@@ -23,6 +23,7 @@ import com.wrig.truehb_ranchi_app_v1.utils.PreferenceKey;
 import com.wrig.truehb_ranchi_app_v1.utils.SharedPref;
 import com.wrig.truehb_ranchi_app_v1.utils.ShowToastUtils;
 import com.wrig.truehb_ranchi_app_v1.utils.Validation;
+import com.wrig.truehb_ranchi_app_v1.views.activities.admin.SuperAdminDashBaordActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -160,10 +161,12 @@ public class LoginActivity extends AppCompatActivity {
             case 1: {
                 startActivity(new Intent(LoginActivity.this, SuperAdminDashBaordActivity.class));
                 finish();
+                break;
             }
             case 2: {
                 startActivity(new Intent(LoginActivity.this, UserDashBoardActivity.class));
                 finish();
+                break;
             }
         }
     }
