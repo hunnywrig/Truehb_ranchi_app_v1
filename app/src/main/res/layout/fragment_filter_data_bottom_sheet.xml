@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.activities.ClientDetailsInputActivity">
+    tools:context=".views.activities.admin.DataFilterActivity"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,8 +25,34 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="end"
+                >
+
+            <Button
+                android:id="@+id/button_save"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:padding="10dp"
+                android:text="Filter"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                />
+
+
+            </LinearLayout>
+
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textinputlayout_clinet_name"
+                android:id="@+id/textinputlayout_from_date"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -32,18 +60,18 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
-                android:hint="Client Name">
+                android:hint="From Date">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textinputedittext_clinet_name"
+                    android:id="@+id/textinputedittext_from_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName" />
+                    android:inputType="date" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textinputlayout_clinet_age"
+                android:id="@+id/textinputlayout_to_date"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -51,16 +79,36 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
-                android:hint="Client Age">
+                android:hint="To Date">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textinputedittext_clinet_age"
+                    android:id="@+id/textinputedittext_to_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:maxLength="3" />
+                    android:inputType="date" />
 
             </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/range_slider_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangle_backgorund"
+                android:contentDescription="age_filter"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:stepSize="1"
+                android:valueFrom="0"
+                android:valueTo="100"
+                app:values="@array/initial_age_slider_values" />
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/spinner_user_gender"
@@ -79,8 +127,8 @@
                 android:paddingRight="15dp"
                 android:paddingBottom="15dp" />
 
-            <com.google.android.material.checkbox.MaterialCheckBox
-                android:id="@+id/checkbox_pregnant"
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_anemic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -88,31 +136,13 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/rectangle_backgorund"
-                android:enabled="false"
+                android:entries="@array/test_anemic"
                 android:paddingStart="5dp"
                 android:paddingLeft="5dp"
                 android:paddingTop="15dp"
                 android:paddingEnd="15dp"
                 android:paddingRight="15dp"
-                android:paddingBottom="15dp"
-                android:text="Pregnant"
-                android:textSize="18sp" />
-
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/spinner_district"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rectangle_backgorund"
-                android:paddingStart="5dp"
-                android:paddingLeft="5dp"
-                android:paddingTop="5dp"
-                android:paddingEnd="15dp"
-                android:paddingRight="15dp"
-                android:paddingBottom="5dp" />
+                android:paddingBottom="15dp" />
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/spinner_block"
@@ -123,42 +153,15 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/rectangle_backgorund"
+                android:entries="@array/test_block"
                 android:paddingStart="5dp"
                 android:paddingLeft="5dp"
-                android:paddingTop="5dp"
+                android:paddingTop="15dp"
                 android:paddingEnd="15dp"
                 android:paddingRight="15dp"
-                android:paddingBottom="5dp" />
+                android:paddingBottom="15dp" />
 
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/spinner_center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/rectangle_backgorund"
-                android:paddingStart="5dp"
-                android:paddingLeft="5dp"
-                android:paddingTop="5dp"
-                android:paddingEnd="15dp"
-                android:paddingRight="15dp"
-                android:paddingBottom="5dp" />
 
-            <Button
-                android:id="@+id/button_save"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="8dp"
-                android:padding="10dp"
-                android:text="Save"
-                android:textSize="22sp"
-                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

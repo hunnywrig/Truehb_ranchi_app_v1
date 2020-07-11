@@ -1,6 +1,7 @@
 package com.wrig.truehb_ranchi_app_v1.views.activities.admin;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -20,14 +21,17 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.wrig.truehb_ranchi_app_v1.R;
 import com.wrig.truehb_ranchi_app_v1.adapters.DisplayReportAdapter;
 import com.wrig.truehb_ranchi_app_v1.apis.ApiClient;
 import com.wrig.truehb_ranchi_app_v1.interfaces.ApiInterface;
+import com.wrig.truehb_ranchi_app_v1.interfaces.BottomSheetListener;
 import com.wrig.truehb_ranchi_app_v1.models.data_filter_model.DataFilterModel;
 import com.wrig.truehb_ranchi_app_v1.models.test_dispaly_model.TestDetailsDisplayModel;
 import com.wrig.truehb_ranchi_app_v1.models.test_dispaly_model.TestDetailsDisplayResponseModel;
@@ -37,6 +41,8 @@ import com.wrig.truehb_ranchi_app_v1.utils.InternetConnection;
 import com.wrig.truehb_ranchi_app_v1.utils.MysqlDateUtils;
 import com.wrig.truehb_ranchi_app_v1.utils.ShowToastUtils;
 import com.wrig.truehb_ranchi_app_v1.views.activities.TestResportActivity;
+import com.wrig.truehb_ranchi_app_v1.views.fragments.BottomSheetFragment;
+import com.wrig.truehb_ranchi_app_v1.views.fragments.FilterDataBottomSheetFragment;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -51,13 +57,14 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class DataDisplayActivity extends AppCompatActivity {
+public class DataDisplayActivity extends AppCompatActivity implements BottomSheetListener {
     @BindView(R.id.txt_value_total_test_count)
     TextView txt_value_total_test_count;
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
     @BindView(R.id.progressBar)
     ProgressBar progressBar;
+
 
     DataFilterModel dataFilterModel;
 
@@ -74,13 +81,11 @@ public class DataDisplayActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Test Details");
         ButterKnife.bind(this);
-        dataFilterModel = (DataFilterModel) getIntent().getSerializableExtra("dataFilter");
+        //dataFilterModel = (DataFilterModel) getIntent().getSerializableExtra("dataFilter");
 
-        if (InternetConnection.checkConnection(DataDisplayActivity.this)) {
-            showRecylerView();
-        } else {
-            InternetConnection.showConnectionMsgDialog(DataDisplayActivity.this);
-        }
+        FilterDataBottomSheetFragment bottomSheet = new FilterDataBottomSheetFragment();
+        bottomSheet.show(getSupportFragmentManager(), "bottomSheet");
+
     }
 
     void showRecylerView() {
@@ -105,6 +110,10 @@ public class DataDisplayActivity extends AppCompatActivity {
                             // Log.d(TAG,response.toString());
 
                         } else {
+                            txt_value_total_test_count.setText("NA");
+                            testDetailsDisplayModelList = null;
+                            recyclerView.setAdapter(null);
+
                             ShowToastUtils.showUiToast(DataDisplayActivity.this, testDetailsDisplayResponseModel.getMessage());
                         }
 
@@ -146,6 +155,11 @@ public class DataDisplayActivity extends AppCompatActivity {
                 }
                 break;
             }
+            case R.id.filter: {
+                FilterDataBottomSheetFragment bottomSheet1 = new FilterDataBottomSheetFragment();
+                bottomSheet1.show(getSupportFragmentManager(), "bottomSheet");
+                break;
+            }
         }
         return super.onOptionsItemSelected(item);
     }
@@ -156,27 +170,42 @@ public class DataDisplayActivity extends AppCompatActivity {
                 Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
 
-            // Permission is not granted
-            // Should we show an explanation?
-            if (ActivityCompat.shouldShowRequestPermissionRationale(DataDisplayActivity.this,
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-                // Show an explanation to the user *asynchronously* -- don't block
-                // this thread waiting for the user's response! After the user
-                // sees the explanation, try again to request the permission.
-            } else {
-                // No explanation needed; request the permission
-                ActivityCompat.requestPermissions(DataDisplayActivity.this,
-                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                        MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
+            // No explanation needed; request the permission
+            ActivityCompat.requestPermissions(DataDisplayActivity.this,
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
 
-                // MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE is an
-                // app-defined int constant. The callback method gets the
-                // result of the request.
-            }
         } else {
             // Permission has already been granted
 
             new ExportDatabaseCSVTask().execute();
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode)
+        {
+            case MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE:
+            {
+                if(grantResults[0]==PackageManager.PERMISSION_GRANTED)
+                {
+                    new ExportDatabaseCSVTask().execute();
+                }else{
+                    ShowToastUtils.showUiMsgDialog(DataDisplayActivity.this,"Permission","Allow permission, Its mandatory for export csv file");
+                }
+            }
+        }
+    }
+
+    @Override
+    public void onButtonClicked(DataFilterModel model) {
+        dataFilterModel = model;
+        if (InternetConnection.checkConnection(DataDisplayActivity.this)) {
+            showRecylerView();
+        } else {
+            InternetConnection.showConnectionMsgDialog(DataDisplayActivity.this);
         }
     }
 
@@ -207,10 +236,10 @@ public class DataDisplayActivity extends AppCompatActivity {
 
                 for (TestDetailsDisplayModel dataList : testDetailsDisplayModelList) {
 
-                        String[] mySecondStringArray = {dataList.getTest_id(), dataList.getClient_name()
-                                , "" + dataList.getClient_age(),getGender(dataList.getClient_gender())
-                        ,getPregnant(dataList.getClient_pregnant_status()),dataList.getClient_hb_value()
-                                ,dataList.getDistrict(),dataList.getBlock(),dataList.getPhc_uhc_sc(),dataList.getTest_time_stamp()};
+                    String[] mySecondStringArray = {dataList.getTest_id(), dataList.getClient_name()
+                            , "" + dataList.getClient_age(), getGender(dataList.getClient_gender())
+                            , getPregnant(dataList.getClient_pregnant_status()), dataList.getClient_hb_value()
+                            , dataList.getDistrict(), dataList.getBlock(), dataList.getPhc_uhc_sc(), dataList.getTest_time_stamp()};
                     csvWrite.writeNext(mySecondStringArray);
                 }
 
@@ -236,7 +265,7 @@ public class DataDisplayActivity extends AppCompatActivity {
                 final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
                 emailIntent.setType("plain/text");
                 // emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{email});
-                  emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Test Report");
+                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Test Report");
 
                 if (URI != null) {
                     emailIntent.putExtra(Intent.EXTRA_STREAM, URI);

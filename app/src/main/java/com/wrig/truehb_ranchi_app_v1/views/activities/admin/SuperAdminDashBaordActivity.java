@@ -36,12 +36,13 @@ private String TAG =SuperAdminDashBaordActivity.class.getSimpleName();
         getSupportActionBar().setTitle("Admin Dashboard");
         ButterKnife.bind(this);
         sharedPref = SharedPref.getInstance(SuperAdminDashBaordActivity.this);
-        requestLocationPermission();
+       // requestLocationPermission();
     }
     @OnClick(R.id.button_test_details)
     void fetchTestDetials(View view)
     {
-        startActivity(new Intent(this,DataFilterActivity.class));
+        //startActivity(new Intent(this,DataFilterActivity.class));
+        startActivity(new Intent(this,DataDisplayActivity.class));
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)

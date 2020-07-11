@@ -3,6 +3,7 @@ package com.wrig.truehb_ranchi_app_v1.databases;
 import android.content.Context;
 import android.util.Log;
 
+import com.wrig.truehb_ranchi_app_v1.models.health_center_data.HeathCenterDataModel;
 import com.wrig.truehb_ranchi_app_v1.models.test_details_database_model.TestDetailsDatabaseModel;
 
 import java.util.List;
@@ -56,7 +57,7 @@ public class AppRepository {
             @Override
             public void run() {
 
-                int isUpdate= mAppDatabase.TestDetailsDao().updateTestDataServerStatusByTestId(test_id,  server_status);
+                int isUpdate = mAppDatabase.TestDetailsDao().updateTestDataServerStatusByTestId(test_id, server_status);
                 Log.d("AppRepository", "UpdateTestDataServer: " + isUpdate);
 
             }
@@ -65,5 +66,28 @@ public class AppRepository {
 
     public List<TestDetailsDatabaseModel> getAllTestDataByUserId(int user_id) {
         return mAppDatabase.TestDetailsDao().getAllTestDataByUserId(user_id);
+    }
+
+    //Health center data
+
+    public long insertHealthCenter(HeathCenterDataModel heathCenterDataModel) {
+        return mAppDatabase.HealthCenterDao().insertHealthCenter(heathCenterDataModel);
+    }
+
+    public void deleteAllHealthCenter() {
+        int isDeleted = mAppDatabase.HealthCenterDao().deleteAllHealthCenter();
+        Log.d("AppRepository", "DeleteAllTestData___: " + isDeleted);
+    }
+
+    public List<String> getAllDistrict() {
+        return mAppDatabase.HealthCenterDao().getAllDistrict();
+    }
+
+    public List<String> getAllBlockByDistrict(String district) {
+        return mAppDatabase.HealthCenterDao().getAllBlockByDistrict(district);
+    }
+
+    public List<String> getAllCenterByDistrict(String block) {
+        return mAppDatabase.HealthCenterDao().getAllCenterByDistrict(block);
     }
 }

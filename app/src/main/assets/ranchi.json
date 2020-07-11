@@ -1,0 +1,1657 @@
+[
+  {
+    "Select_District": "Select District",
+    "Select_Block": "Select Block",
+    "Select_Center": "Select Center"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "PHC - Getalsudh"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "PHC - Jonha"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Ambajharia"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Barwadag"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Bisa"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Bombaibera"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Chatra"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Childag"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Dimri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Guridih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Hesalpidhi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Jaspur"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Kashidih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Kontatoli"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Kuchu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Mahespur"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Merdha"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Narayansoso"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Nawagarh"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Paika"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Rajadera"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Sikidari"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Angara",
+    "Select_Center": "Tati Singari"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "PHC - Itki"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "PHC - Narkopi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "PHC - Tuko"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Bero"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Bhandra"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Bindhani"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Chachkopi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Changani"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Gargaon"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Ghagra"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Harhangi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Itachiladri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Itki"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Jahanabaz"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Karkari"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Katarmali"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Khirda"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Khurkhra"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Kundi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Kurgi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Lamkana"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Lupunga"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Mahuaganw"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Moro"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Narkopi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Paharkanduria"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Patratoli"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Ranikhatanga"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bero",
+    "Select_Center": "Sero"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Aradih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Baridih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Baruhatu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Bichahattu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Dalkedih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Hutma"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Jaradih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Kanchi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Lawgua"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Madhukama"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Nawadih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Rehladih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Sarjamdih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Sumandih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Taimara"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Bundu",
+    "Select_Center": "Tirildih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Baraodi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Bedwari"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Binja"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Burmu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Chaingada"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Chamay"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Churi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Gudgai"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Gusuray"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Hesalpidhi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Kanka"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Khelari"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Kotari"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Lapra"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Makka"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Matway"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Murupiri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Nawadih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Ojhasaram"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Rai"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Sarle"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Thakurgaon"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Ulatu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Burmo",
+    "Select_Center": "Umedanda"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Beyasi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Chama"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "CHORYA"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Gutwa"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Hunhe"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Hurhuri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Kulllu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Lundri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Masammano"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Murto"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Patratu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Raghunathpur"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Sons"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Tala"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Chano",
+    "Select_Center": "Tangar"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Bogda"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Boreya"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Bukru"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Butti"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Chadway"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Chamguru"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Chuttu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Dubalia"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Gaagi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Husir"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Ichapidhi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Jidu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Kamre"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Katakulli"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Koge"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Kokodaru"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Kumahria"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Manahatu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Manha"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Mesra"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Morwa"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Nawatoli"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Oiana"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Pandra"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Pirutola"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Pithoria"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Rarha"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Sangrampur"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Satuacnatu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Similia"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Sugnu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Sukurhuttu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Sundil"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Kanke",
+    "Select_Center": "Uruguttu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Bokaranda"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Champadih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Dadi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Danekera"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Deogaon"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Dolaricha"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Hulsu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Jotaloya"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Koasara"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Kokaria"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Lete"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Mahugaon"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Nawatoli"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Lapung",
+    "Select_Center": "Pandu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Bisakhatanga"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Charki"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Chund"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Hesmi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Jahir"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Jhinri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Kaimbo"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Karge"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Karkarta"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Mahuwajari"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Mandro"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Sakra"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Sursa"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Mandar",
+    "Select_Center": "Uchri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Arabaram"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Balsiring"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Bandhuwa"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Chanderghasi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Dawgai"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Dundigarh"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Fathehpur"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Hahap"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Hardag"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Horhap"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Huwangahtu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Jamchuwan"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Kochbing"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Lali"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Lalkhatga"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Rajaulatu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Rampur"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Sarwal"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Sidrol"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Sithiyo"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Solanki"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Tatisiwai"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Tupdana"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Tutihara"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Namkom",
+    "Select_Center": "Upardahu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Anandi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Baridih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Brawey"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Chadu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Chakla"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Chutupalu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Dahu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Gagari"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Guja"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Harechara"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Ichadag"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Irba"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Jaydiha"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Jeeou"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Kuchu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Kukai"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Kulhi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Kurum"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Kutte"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Madhukam"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Pancha"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Piska"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Rukka"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Sadma"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Ukrid"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ormanjhi",
+    "Select_Center": "Vusur"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ranchi Urban",
+    "Select_Center": "Ranchi Urban"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Adchero"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Argora"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Balalong"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Banapiri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Bandheya"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Barkatoli"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Barsa"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Basila"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Bijulia"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Chipra"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Chitarkota"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Guru"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Hehal"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Hethakota"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Hurhuri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Jari"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Katarpa"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Katu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Lalgutuwa"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Malmandu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Nagri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Nayasarai"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Nichiyatu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Pali"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Pundag"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Purio"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Ratu Notional"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Tarup"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Tigra"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Tiril"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Tundul"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Ratu",
+    "Select_Center": "Tusmu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Ajaygarh"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Bansaruli"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Bansia"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Banta"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Barachangru"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Basantpur"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Chatmbadi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Dowaru"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Godadih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Hakedag"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Halmadh"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Hazam"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Jaradih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Jhabri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Kochcho"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Ladhup"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Lota"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Lowadag"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Muri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Nawadihkulsut"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Piska"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Rampur"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Silli",
+    "Select_Center": "Sillidih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Adremhatu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Baredih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Barenda"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Basahatu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Birgamdih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Chokahatu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Dirsir"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Dokad"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Dulmi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Erisereng"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Hesadih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Jamudag"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Kotangdag"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Landupdih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Lowahatu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Maheshpur"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Panadadih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Paramadih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Rahe"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Salsood"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Sawdih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Somadih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Srenghatu"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Sonahatu",
+    "Select_Center": "Tetla"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "BADLA"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Baralanga"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Basucoha"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Bhuyiadih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Birdih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Chatgaon"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "CHIRUDIH"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "DEORI"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Dulmi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Jamunpiri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Jilingsereng"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "JOPNO"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Kokadih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Kubasal"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "LUNGTU"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Majhidih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Makrumdih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Mankidih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Murpa"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Nawadih"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Palna"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "PARASHI"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Pundidiri"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Rabo"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "RADGAON"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Ragdi"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "SARJAMDIH"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "ULIDIH"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Ulilohra"
+  },
+  {
+    "Select_District": "Ranchi",
+    "Select_Block": "Tamar",
+    "Select_Center": "Umlesha"
+  }
+]

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Truehb_ranchi_app_v1</string>
+    <string name="app_name">TrueHb - Ranchi</string>
     <array name="user_type">
         <item>Select User Type</item>
         <item>Admin</item>
@@ -19,9 +19,21 @@
     </array>
     <array name="test_block">
         <item>Select Block</item>
-        <item>Block 1</item>
-        <item>Block 2</item>
-        <item>Block 3</item>
+        <item>Angara</item>
+        <item>Bero</item>
+        <item>Bundu</item>
+        <item>Burmo</item>
+        <item>Chano</item>
+        <item>Kanke</item>
+        <item>Lapung</item>
+        <item>Mandar</item>
+        <item>Namkom</item>
+        <item>Ormanjhi</item>
+        <item>Ranchi Urban</item>
+        <item>Ratu</item>
+        <item>Silli</item>
+        <item>Sonahatu</item>
+        <item>Tamar</item>
     </array>
     <array name="test_center">
         <item>Select Center</item>
@@ -39,4 +51,6 @@
         <item>10</item>
         <item>70</item>
     </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

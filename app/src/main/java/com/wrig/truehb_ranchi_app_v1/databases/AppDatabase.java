@@ -6,10 +6,12 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
+import com.wrig.truehb_ranchi_app_v1.interfaces.HealthCenterDao;
 import com.wrig.truehb_ranchi_app_v1.interfaces.TestDetailsDao;
+import com.wrig.truehb_ranchi_app_v1.models.health_center_data.HeathCenterDataModel;
 import com.wrig.truehb_ranchi_app_v1.models.test_details_database_model.TestDetailsDatabaseModel;
 
-@Database(entities = {TestDetailsDatabaseModel.class}, version = 1)
+@Database(entities = {TestDetailsDatabaseModel.class, HeathCenterDataModel.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
     public static final String DATABASE_NAME = "Truehb_ranchi.db";
 
@@ -18,6 +20,8 @@ public abstract class AppDatabase extends RoomDatabase {
     public static final Object LOCK = new Object();
 
     public abstract TestDetailsDao TestDetailsDao();
+
+    public  abstract HealthCenterDao HealthCenterDao();
 
     public static AppDatabase getInstance(Context context) {
 

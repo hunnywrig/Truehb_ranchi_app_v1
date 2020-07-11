@@ -8,13 +8,19 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 
 import com.google.android.material.checkbox.MaterialCheckBox;
 import com.google.android.material.textfield.TextInputEditText;
 import com.wrig.truehb_ranchi_app_v1.R;
+import com.wrig.truehb_ranchi_app_v1.databases.AppRepository;
 import com.wrig.truehb_ranchi_app_v1.models.client_details_model.ClientDetailsModel;
+import com.wrig.truehb_ranchi_app_v1.utils.DuplicateUtils;
 import com.wrig.truehb_ranchi_app_v1.utils.SharedPref;
 import com.wrig.truehb_ranchi_app_v1.utils.ShowToastUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -39,6 +45,12 @@ public class ClientDetailsInputActivity extends AppCompatActivity {
 
     SharedPref sharedPref;
 
+    List<String> district;
+    List<String> block;
+    List<String> centre;
+
+    private AppRepository appRepository;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +59,7 @@ public class ClientDetailsInputActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Client Details");
         ButterKnife.bind(this);
         sharedPref = SharedPref.getInstance(ClientDetailsInputActivity.this);
+        appRepository = AppRepository.getInstance(getApplicationContext());
 
         spinner_user_gender.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -57,6 +70,50 @@ public class ClientDetailsInputActivity extends AppCompatActivity {
                     checkbox_pregnant.setEnabled(false);
                     checkbox_pregnant.setChecked(false);
                 }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+
+        district = appRepository.getAllDistrict();
+        district = DuplicateUtils.removeDuplicatesFromList(district);
+
+        ArrayAdapter arrayAdapter = new ArrayAdapter(ClientDetailsInputActivity.this, R.layout.support_simple_spinner_dropdown_item, district);
+        spinner_district.setAdapter(arrayAdapter);
+
+        //district sppiner click listioner
+
+        spinner_district.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String str = district.get(position);
+                block = appRepository.getAllBlockByDistrict(str);
+                block = DuplicateUtils.removeDuplicatesFromList(block);
+                ArrayAdapter arrayAdapter1 = new ArrayAdapter(ClientDetailsInputActivity.this, R.layout.support_simple_spinner_dropdown_item, block);
+
+                spinner_block.setAdapter(arrayAdapter1);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        spinner_block.setSelection(0, true);
+
+        spinner_block.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String str = block.get(position);
+
+                centre = appRepository.getAllCenterByDistrict(str);
+                centre = DuplicateUtils.removeDuplicatesFromList(centre);
+                ArrayAdapter arrayAdapter1 = new ArrayAdapter(ClientDetailsInputActivity.this, R.layout.support_simple_spinner_dropdown_item, centre);
+
+                spinner_center.setAdapter(arrayAdapter1);
             }
 
             @Override

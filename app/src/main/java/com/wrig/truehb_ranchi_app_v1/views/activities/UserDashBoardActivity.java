@@ -6,16 +6,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.wrig.truehb_ranchi_app_v1.R;
 import com.wrig.truehb_ranchi_app_v1.apis.ApiClient;
 import com.wrig.truehb_ranchi_app_v1.databases.AppRepository;
 import com.wrig.truehb_ranchi_app_v1.interfaces.ApiInterface;
+import com.wrig.truehb_ranchi_app_v1.models.health_center_data.HealthCenterJsonModel;
+import com.wrig.truehb_ranchi_app_v1.models.health_center_data.HeathCenterDataModel;
 import com.wrig.truehb_ranchi_app_v1.models.test_deatails_download_moel.TestDetailsDownloadModel;
 import com.wrig.truehb_ranchi_app_v1.models.test_deatails_download_moel.TestDetailsDownloadPostModel;
 import com.wrig.truehb_ranchi_app_v1.models.test_deatails_download_moel.TestDetailsDownloadResponseModel;
@@ -26,11 +31,13 @@ import com.wrig.truehb_ranchi_app_v1.models.test_details_upload_model.TestDetail
 import com.wrig.truehb_ranchi_app_v1.models.test_details_upload_model.TestIdsModel;
 import com.wrig.truehb_ranchi_app_v1.utils.Constants;
 import com.wrig.truehb_ranchi_app_v1.utils.InternetConnection;
+import com.wrig.truehb_ranchi_app_v1.utils.JsonUtils;
 import com.wrig.truehb_ranchi_app_v1.utils.PreferenceKey;
 import com.wrig.truehb_ranchi_app_v1.utils.SharedPref;
 import com.wrig.truehb_ranchi_app_v1.utils.ShowToastUtils;
 
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,7 +79,43 @@ public class UserDashBoardActivity extends AppCompatActivity {
 
     @OnClick(R.id.button_start_new_test)
     void buttonStartNewTest() {
-        startActivity(new Intent(UserDashBoardActivity.this, ClientDetailsInputActivity.class));
+        if (!sharedPref.getBooleanData(PreferenceKey.PREF_DATA_DOWNLOADED_KEY, false)) {
+            //progressDialog.setMessage("Processing....");
+            progressDialog.show();
+            new HealthDetailsTask().execute();
+
+        } else {
+            startActivity(new Intent(UserDashBoardActivity.this, ClientDetailsInputActivity.class));
+        }
+    }
+
+    private class HealthDetailsTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            ArrayList<HeathCenterDataModel> heathCenterDataModels = new ArrayList<>();
+            String jsonFileString = JsonUtils.getJsonFromAssets(getApplicationContext(), "ranchi.json");
+            // Log.i(TAG, jsonFileString);
+
+            if (jsonFileString != null) {
+                Gson gson = new Gson();
+                Type listUserType = new TypeToken<List<HealthCenterJsonModel>>() {
+                }.getType();
+
+                List<HealthCenterJsonModel> centerJsonModels = gson.fromJson(jsonFileString, listUserType);
+                for (HealthCenterJsonModel model : centerJsonModels) {
+                    //Log.d(TAG,"center_"+model.getSelect_Center());
+                    appRepository.insertHealthCenter(new HeathCenterDataModel(model.getSelect_District(), model.getSelect_Block(), model.getSelect_Center()));
+                }
+                sharedPref.setBooleanData(PreferenceKey.PREF_DATA_DOWNLOADED_KEY, true);
+                if (progressDialog.isShowing())
+                    progressDialog.dismiss();
+
+                startActivity(new Intent(UserDashBoardActivity.this, ClientDetailsInputActivity.class));
+            }
+
+            return null;
+        }
     }
 
     void downloadTestDetails(final int pageNo) {
@@ -153,6 +196,7 @@ public class UserDashBoardActivity extends AppCompatActivity {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     appRepository.deleteAllTestData();
+                                    appRepository.deleteAllHealthCenter();
                                     sharedPref.clearPrefence();
                                     startActivity(new Intent(UserDashBoardActivity.this, LoginActivity.class));
                                     finish();
@@ -183,8 +227,7 @@ public class UserDashBoardActivity extends AppCompatActivity {
                 }
                 break;
             }
-            case R.id.test_report:
-            {
+            case R.id.test_report: {
                 startActivity(new Intent(UserDashBoardActivity.this, TestResportActivity.class));
                 break;
             }
